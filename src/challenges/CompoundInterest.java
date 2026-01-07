@@ -17,7 +17,8 @@ public class CompoundInterest {
 
         double compoundInterest = p * Math.pow((1 + r / 100), t);
 
-        System.out.print("The compound interest on " + p + " with " + r + "% rate of interest for " + t + " years is " + compoundInterest + ".");
+        System.out.print("The compound interest on " + p + " with " + r + "% rate of interest for " + t + " years is "
+                + compoundInterest + ".");
         System.out.println("The final amount will be " + (compoundInterest + p));
 
     }
