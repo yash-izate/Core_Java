@@ -2,22 +2,23 @@ package challenges;
 
 import java.util.Scanner;
 
-public class SimpleIntrest {
+public class SimpleInterest {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("\nWelcome to Simple Intrest Calculator !...\n");
-        System.out.print("Enter principal amount; ");
+        System.out.println("\nWelcome to Simple Interest Calculator !...\n");
+        System.out.print("Enter principal amount: ");
         float p = sc.nextFloat();
-        System.out.print("Enter rate of intrest; ");
+        System.out.print("Enter rate of interest: ");
         float r = sc.nextFloat();
-        System.out.print("Enter time in years; ");
+        System.out.print("Enter time in years: ");
         int t = sc.nextInt();
         System.out.println();
 
-        double simpleIntrest = (p * r * t) / 100;
+        double simpleInterest = (p * r * t) / 100;
 
-        System.out.println("The simple intrest on " + p + " with " + r + "% rate of intrest for " + t + " years is " + simpleIntrest);
-        
+        System.out.print("The simple interest on " + p + " with " + r + "% rate of interest for " + t + " years is " + simpleInterest + ". ");
+        System.out.println("The final amount will be " + (simpleInterest + p));
+
     }
 }
