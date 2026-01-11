@@ -51,6 +51,13 @@ public class ArmstrongNumber {
             sum += (int) Math.pow(digit, digits);
             temp2 /= 10;
         }
-        return sum;
+
+        if (sum == num) {
+            System.out.println("Armstrong Number");
+        } else {
+            System.out.println("Not an Armstrong Number");
+        }
+
+        sc.close();
     }
 }
