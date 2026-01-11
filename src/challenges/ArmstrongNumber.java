@@ -13,39 +13,44 @@ public class ArmstrongNumber {
 
         if (num < 0) {
             System.out.println("Negative numbers cannot be Armstrong numbers.");
+            sc.close();
             return;
         }
 
-        int original = num;
-        int temp = num;
-        int digits = 0;
+        int sum = getSum(num);
 
-        // Count digits
-        if (num == 0) {
-            digits = 1;
-        } else {
-            while (temp > 0) {
-                digits++;
-                temp /= 10;
-            }
-        }
-
-        temp = num;
-        int sum = 0;
-
-        // Calculate Armstrong sum
-        while (temp > 0) {
-            int digit = temp % 10;
-            sum += (int) Math.pow(digit, digits);
-            temp /= 10;
-        }
-
-        if (sum == original) {
+        if (sum == num) {
             System.out.println("Armstrong Number");
         } else {
             System.out.println("Not an Armstrong Number");
         }
 
         sc.close();
+    }
+
+    private static int getSum(int num) {
+        int temp1 = num;
+        int digits = 0;
+
+        // Count digits
+        if (num == 0) {
+            digits = 1;
+        } else {
+            while (temp1 > 0) {
+                digits++;
+                temp1 /= 10;
+            }
+        }
+
+        int temp2 = num;
+        int sum = 0;
+
+        // Armstrong calculation (using Math.pow, close to your logic)
+        while (temp2 > 0) {
+            int digit = temp2 % 10;
+            sum += (int) Math.pow(digit, digits);
+            temp2 /= 10;
+        }
+        return sum;
     }
 }
