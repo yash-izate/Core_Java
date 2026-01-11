@@ -25,7 +25,9 @@ public class LcmOfTwo {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        System.out.println("\nWelcome to LCM Calculator of Two Numbers !...\n");
+        int num1 = userInput();
+        int num2 = userInput();
 
         System.out.println("\nWelcome to LCM Calculator of Two Numbers !..\n");
         System.out.print("Enter first number: ");
