@@ -1,0 +1,24 @@
+package arrays;
+
+import java.util.Arrays;
+
+public class ArrayReversalBetter {
+    public static void main(String[] args) {
+        System.out.println("\nArray Reversal using Two Pointer Approach !");
+
+        int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+
+        int start = 0;
+        int end = arr.length - 1;
+
+        while (start < end) {
+            int temp = arr[start];
+            arr[start] = arr[end];
+            arr[end] = temp;
+            start++;
+            end--;
+        }
+
+        System.out.println("Reversed Array: " + Arrays.toString(arr));
+    }
+}
