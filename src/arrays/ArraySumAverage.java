@@ -22,6 +22,8 @@ public class ArraySumAverage {
             sum += ele;
         }
 
+        System.out.println("\nSum of elements of array: " + sum);
+
         float avg = (float) sum / numArr.length;
         System.out.println("\nAverage of elements in array: " + avg);
 
