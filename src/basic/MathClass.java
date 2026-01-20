@@ -4,6 +4,10 @@ public class MathClass {
     public static void main(String[] args) {
         System.out.println("\nWelcome to Math Class Methods Demo !.");
 
+        // constant values
+        System.out.println(Math.PI);
+        System.out.println(Math.E);
+        // methods
         System.out.println(Math.abs(-31.45));
         System.out.println(Math.ceil(68.456));
         System.out.println(Math.floor(10.90075));
