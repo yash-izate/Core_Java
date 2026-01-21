@@ -1,18 +1,18 @@
 package oops.practice;
 
 public class BankAccount {
+
     private final String accountHolderName;
     private final long accountNumber;
-    private double currentBalance;
+    private double balance;
 
-    public BankAccount(String accountHolderName, long accountNumber, double currentBalance) {
-        if (currentBalance < 0) {
-            throw new IllegalArgumentException("Balance cannot be negative");
+    public BankAccount(String accountHolderName, long accountNumber, double initialBalance) {
+        if (initialBalance < 0) {
+            throw new IllegalArgumentException("Initial balance cannot be negative");
         }
-
         this.accountHolderName = accountHolderName;
         this.accountNumber = accountNumber;
-        this.currentBalance = currentBalance;
+        this.balance = initialBalance;
     }
 
     public String getAccountHolderName() {
@@ -23,36 +23,29 @@ public class BankAccount {
         return accountNumber;
     }
 
-    public double getCurrentBalance() {
-        return currentBalance;
+    public double getBalance() {
+        return balance;
     }
 
-    public void deposit(double amount) {
+    public boolean deposit(double amount) {
         if (amount <= 0) {
-            System.out.println("\nPlease enter a valid amount!");
-        } else {
-            currentBalance += amount;
-            System.out.println("Amount Deposited Successfully!");
+            return false;
         }
+        balance += amount;
+        return true;
     }
 
-    public void withdraw(double amount) {
-        if (amount > 0) {
-            if (currentBalance < amount) {
-                System.out.println("Insufficient Balance!");
-            } else {
-                currentBalance = currentBalance - amount;
-                System.out.println("Amount Withdrawn Successfully!");
-            }
-        } else {
-            System.out.println("Enter Valid Amount For Withdrawal!");
+    public boolean withdraw(double amount) {
+        if (amount <= 0 || amount > balance) {
+            return false;
         }
+        balance -= amount;
+        return true;
     }
 
     @Override
     public String toString() {
-        return "Account Holder Name: " + accountHolderName + '\n' +
-                "Account Number: " + accountNumber + '\n' +
-                "Bank Name: State Bank Of India";
+        return "Account Holder Name : " + accountHolderName +
+                "\nAccount Number      : " + accountNumber;
     }
 }
