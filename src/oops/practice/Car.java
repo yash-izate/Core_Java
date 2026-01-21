@@ -1,11 +1,11 @@
-package oops;
+package oops.practice;
 
 public class Car {
-    int noOfWheels;
-    String colour;
-    float maxSpeed;
-    float currentFuel;
-    int noOfSeats;
+    public int noOfWheels;
+    public String colour;
+    public float maxSpeed;
+    public float currentFuel;
+    public int noOfSeats;
 
     public void drive() {
         if (currentFuel <= 0) {
