@@ -1,4 +1,4 @@
-package oops.practice;
+package oops.classes;
 
 public class BankAccount {
 

@@ -1,7 +1,7 @@
-package oops.execute;
+package oops.test;
 
-import oops.practice.Circle;
-import oops.practice.Rectangle;
+import oops.classes.Circle;
+import oops.classes.Rectangle;
 
 public class Calculator {
     public static void main(String[] args) {

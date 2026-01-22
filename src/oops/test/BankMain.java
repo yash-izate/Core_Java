@@ -1,6 +1,6 @@
-package oops.execute;
+package oops.test;
 
-import oops.practice.BankAccount;
+import oops.classes.BankAccount;
 
 import java.util.Scanner;
 
