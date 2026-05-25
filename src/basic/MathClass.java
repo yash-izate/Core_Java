@@ -19,7 +19,7 @@ public class MathClass {
         System.out.println(Math.round(Math.random() * 100));
         System.out.println(Math.exp(10));
         System.out.println(Math.log10(100));
-        System.out.println(Math.sin(Math.sqrt(2)));
+        System.out.println(Math.tan(Math.sqrt(2)));
 
     }
 }
