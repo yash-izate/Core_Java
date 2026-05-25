@@ -9,8 +9,6 @@ public class IfElse {
         System.out.print("Enter age: ");
         int age = sc.nextInt();
 
-        boolean isAdult;
-
         if (age >= 18) {
             System.out.println("Eligible to Vote");
         } else {
