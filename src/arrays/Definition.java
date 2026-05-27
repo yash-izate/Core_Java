@@ -16,6 +16,7 @@ public class Definition {
 
         // print array using loop
         int[] arrOdd = {1, 3, 5, 7, 9};
+        //noinspection ForLoopReplaceableByForEach
         for (int i = 0; i < arrOdd.length; i++) {
             System.out.print(arrOdd[i] + " ");
         }
