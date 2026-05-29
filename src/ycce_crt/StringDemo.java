@@ -18,5 +18,23 @@ public class StringDemo {
         } else {
             System.out.println("Not Palindrome");
         }
+
+        System.out.println("---------------------------------------------");
+
+        String str2 = "Hello how are you";
+        String temp2 = "aeiou";
+
+        int n = 0;
+
+        for (int i = 0; i < str2.length(); i++) {
+            for (int j = 0; j < temp2.length(); j++) {
+
+                if (str2.charAt(i) == temp2.charAt(j)) {
+                    n++;
+                }
+            }
+        }
+
+        System.out.println("Total vowels: " + n);
     }
 }
