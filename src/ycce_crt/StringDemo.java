@@ -36,5 +36,20 @@ public class StringDemo {
         }
 
         System.out.println("Total vowels: " + n);
+
+        System.out.println("------------------------------------");
+
+        String str3 = "My name is Yash";
+        int count = 0;
+
+        for (int i = 0; i < str3.length(); i++) {
+            char ch = str3.charAt(i);
+
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+                count++;
+            }
+        }
+
+        System.out.println("Modern Approach volwels count = " + count);
     }
 }
