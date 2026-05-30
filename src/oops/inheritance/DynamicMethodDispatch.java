@@ -23,9 +23,9 @@ class Smartphone extends Phone {
 
 public class DynamicMethodDispatch {
     public static void main(String[] args) {
-//        Phone ob1 = new Phone();                   //Allowed
+//        SmartPhone ob1 = new SmartPhone();                   //Allowed
 //        Smartphone ob2 = new Smartphone();         //Allowed
-//        Smartphone obj = new Phone();              //Not Allowed
+//        Smartphone obj = new SmartPhone();              //Not Allowed
 
         Phone ob3 = new Smartphone();
         ob3.on();

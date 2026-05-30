@@ -35,7 +35,6 @@ public class ArrayDemo {
                     found = true;
                     break;
                 }
-
             }
 
             if (!found) {
@@ -48,7 +47,7 @@ public class ArrayDemo {
         int[] arr1 = {3, 0, 1, 0, 0, 8, 4};
 //        dsa1(arr1);
 
-        int[] arr2 = {2, 1, 6, 5};
+        int[] arr2 = {2, 1, 6, 5, 8};
         dsa2(arr2);
 
     }
