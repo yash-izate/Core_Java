@@ -23,10 +23,10 @@ public class ThreadConstructorDemo {
         h.start();
         y.start();
 
-        System.out.println("The Id of the thread Y is " + h.getId());
+        System.out.println("The Id of the thread H is " + h.threadId());
         System.out.println("The name of the thread H is " + h.getName());
 
-        System.out.println("The Id of the thread Y is " + y.getId());
+        System.out.println("The Id of the thread Y is " + y.threadId());
         System.out.println("The name of the thread Y is " + y.getName());
     }
 }
