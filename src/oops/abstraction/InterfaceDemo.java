@@ -51,7 +51,7 @@ public class InterfaceDemo {
         cycleHarry.speedUp(20);
 
 //     you can create properties in Interfaces
-        System.out.println(cycleHarry.a);
+        System.out.println(Bicycle.a);
 
 //     you cannot modify the properties in Interfaces as they are final
 
