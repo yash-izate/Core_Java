@@ -29,18 +29,18 @@ public class LinkedListDemo1 {
         third.data = 30;
         third.addr = null;
 
-        Node four = new Node();
-        four.data = 40;
-        four.addr = null;
+        Node fourth = new Node();
+        fourth.data = 40;
+        fourth.addr = null;
 
-        Node five = new Node();
-        five.data = 50;
-        five.addr = null;
+        Node fifth = new Node();
+        fifth.data = 50;
+        fifth.addr = null;
 
         first.addr = second;
         second.addr = third;
-        third.addr = four;
-        four.addr = five;
+        third.addr = fourth;
+        fourth.addr = fifth;
 
         LinkedListDemo1 obj = new LinkedListDemo1();
         obj.traverse(first);
