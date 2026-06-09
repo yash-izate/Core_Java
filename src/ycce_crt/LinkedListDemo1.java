@@ -87,10 +87,10 @@ public class LinkedListDemo1 {
         newL.addr = null;
 
         obj.insertLast(first, newL);
-        obj.traverse(first);
+        obj.traverse(yash);
 
         System.out.println();
-        obj.deleteFirst(first);
-        obj.traverse(first);
+        yash = obj.deleteFirst(yash);
+        obj.traverse(yash);
     }
 }
