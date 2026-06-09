@@ -5,7 +5,7 @@ class Node {
     Node addr;
 }
 
-public class LinkedListDemo2 {
+public class LinkedListDemo1 {
 
     static int count = 0;
 
@@ -16,7 +16,12 @@ public class LinkedListDemo2 {
             temp = temp.addr;
             count++;
         }
+    }
 
+    Node insertFirst(Node head, Node yash) {
+        yash.addr = head;
+        head = yash;
+        return head;
     }
 
     public static void main(String[] args) {
@@ -46,8 +51,18 @@ public class LinkedListDemo2 {
         fourth.addr = fifth;
 
         LinkedListDemo1 obj = new LinkedListDemo1();
-        obj.traverse(first);
 
-        System.out.println("\nTotal nodes: " + count);
+//        obj.traverse(first);
+//        System.out.println("\nTotal nodes: " + count);
+
+        Node yash = new Node();
+        yash.data = 100;
+        yash.addr = null;
+
+        yash = obj.insertFirst(first, yash);
+        obj.traverse(yash);
+
+        System.out.println("\nTotal number of nodes: " + count);
+
     }
 }
