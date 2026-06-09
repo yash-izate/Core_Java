@@ -5,7 +5,7 @@ class Node {
     Node addr;
 }
 
-public class LinkedListDemo1 {
+public class LinkedListDemo2 {
 
     static int count = 0;
 
