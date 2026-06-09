@@ -24,6 +24,14 @@ public class LinkedListDemo1 {
         return head;
     }
 
+    void insertLast(Node head, Node lastNode) {
+        Node temp = head;
+        while (temp.addr != null) {
+            temp = temp.addr;
+        }
+        temp.addr = lastNode;
+    }
+
     public static void main(String[] args) {
         Node first = new Node();
         first.data = 10;
@@ -64,5 +72,11 @@ public class LinkedListDemo1 {
 
         System.out.println("\nTotal number of nodes: " + count);
 
+        Node newL = new Node();
+        newL.data = 111;
+        newL.addr = null;
+
+        obj.insertLast(first, newL);
+        obj.traverse(first);
     }
 }
