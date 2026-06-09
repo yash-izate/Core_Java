@@ -32,6 +32,16 @@ public class LinkedListDemo1 {
         temp.addr = lastNode;
     }
 
+    Node deleteFirst(Node head) {
+        if (head == null) {
+            System.out.println("Linked List is null!");
+            return null;
+        }
+        System.out.println("Deleted node: " + head.data);
+        head = head.addr;
+        return head;
+    }
+
     public static void main(String[] args) {
         Node first = new Node();
         first.data = 10;
@@ -77,6 +87,10 @@ public class LinkedListDemo1 {
         newL.addr = null;
 
         obj.insertLast(first, newL);
+        obj.traverse(first);
+
+        System.out.println();
+        obj.deleteFirst(first);
         obj.traverse(first);
     }
 }
