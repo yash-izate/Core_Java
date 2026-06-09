@@ -7,11 +7,14 @@ class Node {
 
 public class LinkedListDemo1 {
 
+    static int count = 0;
+
     void traverse(Node head) {
         Node temp = head;
         while (temp != null) {
             System.out.print(temp.data + " -> ");
             temp = temp.addr;
+            count++;
         }
 
     }
@@ -44,5 +47,7 @@ public class LinkedListDemo1 {
 
         LinkedListDemo1 obj = new LinkedListDemo1();
         obj.traverse(first);
+
+        System.out.println("\nTotal nodes: " + count);
     }
 }
