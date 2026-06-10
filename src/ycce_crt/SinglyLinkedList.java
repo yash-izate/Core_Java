@@ -5,7 +5,7 @@ class Node {
     Node addr;     // stores address of next node
 }
 
-public class LinkedListDemo1 {
+public class SinglyLinkedList {
 
     static int count = 0;
 
@@ -145,7 +145,7 @@ public class LinkedListDemo1 {
         third.addr = fourth;
         fourth.addr = fifth;
 
-        LinkedListDemo1 obj = new LinkedListDemo1();
+        SinglyLinkedList obj = new SinglyLinkedList();
 
         // Create new node for insertion at beginning
         Node yash = new Node();
