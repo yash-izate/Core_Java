@@ -1,8 +1,8 @@
 package ycce_crt;
 
-class Node {
+class NodeS {
     int data;      // stores data
-    Node addr;     // stores address of next node
+    NodeS addr;     // stores address of next node
 }
 
 public class SinglyLinkedList {
@@ -10,8 +10,8 @@ public class SinglyLinkedList {
     static int count = 0;
 
     // Display all nodes of the linked list
-    void traverse(Node head) {
-        Node temp = head;
+    void traverse(NodeS head) {
+        NodeS temp = head;
 
         while (temp != null) {
             System.out.print(temp.data + " -> ");
@@ -21,7 +21,7 @@ public class SinglyLinkedList {
     }
 
     // Insert a node at the beginning
-    Node insertFirst(Node head, Node yash) {
+    NodeS insertFirst(NodeS head, NodeS yash) {
 
         // New node points to current head
         yash.addr = head;
@@ -33,9 +33,9 @@ public class SinglyLinkedList {
     }
 
     // Insert a node at the end
-    void insertLast(Node head, Node lastNode) {
+    void insertLast(NodeS head, NodeS lastNode) {
 
-        Node temp = head;
+        NodeS temp = head;
 
         // Move to the last node
         while (temp.addr != null) {
@@ -47,7 +47,7 @@ public class SinglyLinkedList {
     }
 
     // Delete the first node
-    Node deleteFirst(Node head) {
+    NodeS deleteFirst(NodeS head) {
 
         if (head == null) {
             System.out.println("Linked List is null!");
@@ -63,7 +63,7 @@ public class SinglyLinkedList {
     }
 
     // Delete node at a given position
-    Node deleteAtPosition(int pos, Node head) {
+    NodeS deleteAtPosition(int pos, NodeS head) {
 
         if (head == null) {
             System.out.println("Linked List is empty!");
@@ -76,7 +76,7 @@ public class SinglyLinkedList {
             return head.addr;
         }
 
-        Node temp = head;
+        NodeS temp = head;
 
         // Move to node just before target position
         for (int i = 1; i < pos - 1 && temp != null; i++) {
@@ -98,11 +98,11 @@ public class SinglyLinkedList {
     }
 
     // Reverse the linked list
-    Node reverse(Node head) {
+    NodeS reverse(NodeS head) {
 
-        Node prev = null;  // previous node
-        Node curr = head;  // current node
-        Node next;         // next node
+        NodeS prev = null;  // previous node
+        NodeS curr = head;  // current node
+        NodeS next;         // next node
 
         while (curr != null) {
 
@@ -124,19 +124,19 @@ public class SinglyLinkedList {
     public static void main(String[] args) {
 
         // Create nodes
-        Node first = new Node();
+        NodeS first = new NodeS();
         first.data = 10;
 
-        Node second = new Node();
+        NodeS second = new NodeS();
         second.data = 20;
 
-        Node third = new Node();
+        NodeS third = new NodeS();
         third.data = 30;
 
-        Node fourth = new Node();
+        NodeS fourth = new NodeS();
         fourth.data = 40;
 
-        Node fifth = new Node();
+        NodeS fifth = new NodeS();
         fifth.data = 50;
 
         // Connect nodes
@@ -148,7 +148,7 @@ public class SinglyLinkedList {
         SinglyLinkedList obj = new SinglyLinkedList();
 
         // Create new node for insertion at beginning
-        Node yash = new Node();
+        NodeS yash = new NodeS();
         yash.data = 100;
 
         // Insert at first
@@ -160,7 +160,7 @@ public class SinglyLinkedList {
         System.out.println("\nTotal number of nodes: " + count);
 
         // Create new node for insertion at end
-        Node newL = new Node();
+        NodeS newL = new NodeS();
         newL.data = 111;
 
         // Insert at last
@@ -186,7 +186,7 @@ public class SinglyLinkedList {
         // Reverse linked list
         System.out.println("\n\nReversed Linked List:");
 
-        Node newHead = obj.reverse(yash);
+        NodeS newHead = obj.reverse(yash);
 
         obj.traverse(newHead);
     }

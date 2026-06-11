@@ -1,17 +1,17 @@
 package ycce_crt;
 
-class Node1 {
+class NodeD {
     int data;
-    Node1 next;
-    Node1 prev;
+    NodeD next;
+    NodeD prev;
 }
 
 public class DoublyLinkedList {
 
     // Traverse in forward direction
-    void traverse(Node1 head) {
+    void traverse(NodeD head) {
 
-        Node1 temp = head;
+        NodeD temp = head;
 
         while (temp != null) {
             System.out.print(temp.data + " <-> ");
@@ -22,9 +22,9 @@ public class DoublyLinkedList {
     }
 
     // Traverse in backward direction
-    void reverseTraverse(Node1 tail) {
+    void reverseTraverse(NodeD tail) {
 
-        Node1 temp = tail;
+        NodeD temp = tail;
 
         while (temp != null) {
             System.out.print(temp.data + " <-> ");
@@ -36,13 +36,13 @@ public class DoublyLinkedList {
 
     public static void main(String[] args) {
 
-        Node1 first = new Node1();
+        NodeD first = new NodeD();
         first.data = 10;
 
-        Node1 second = new Node1();
+        NodeD second = new NodeD();
         second.data = 20;
 
-        Node1 third = new Node1();
+        NodeD third = new NodeD();
         third.data = 30;
 
         // Mapping nodes
