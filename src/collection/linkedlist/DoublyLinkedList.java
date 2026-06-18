@@ -1,4 +1,4 @@
-package ycce_crt;
+package collection.linkedlist;
 
 class NodeD {
     int data;

@@ -1,4 +1,4 @@
-package ycce_crt;
+package collection.stack;
 
 import java.util.Stack;
 

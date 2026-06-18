@@ -1,4 +1,4 @@
-package ycce_crt;
+package collection.hashmap;
 
 import java.util.HashMap;
 

@@ -1,4 +1,4 @@
-package ycce_crt;
+package collection.stack;
 
 import java.util.Stack;
 
@@ -22,6 +22,6 @@ public class StackDemo2 {
             System.out.println(st.peek() + " -> -1");
             st.pop();
         }
-        
+
     }
 }

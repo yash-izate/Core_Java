@@ -1,4 +1,4 @@
-package ycce_crt;
+package collection.queue;
 
 public class QueueDemo {
     int[] arr = new int[5];

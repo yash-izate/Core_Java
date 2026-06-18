@@ -1,4 +1,4 @@
-package ycce_crt;
+package collection.binarytree;
 
 class NodeB {
     int data;

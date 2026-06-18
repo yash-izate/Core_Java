@@ -1,4 +1,4 @@
-package ycce_crt;
+package collection.stack;
 
 public class StackDemo {
     int[] arr = new int[5];

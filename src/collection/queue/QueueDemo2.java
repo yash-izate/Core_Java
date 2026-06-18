@@ -1,4 +1,4 @@
-package ycce_crt;
+package collection.queue;
 
 //first non-repeating character
 

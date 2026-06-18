@@ -1,4 +1,4 @@
-package ycce_crt;
+package collection.arraylist;
 
 import java.util.ArrayList;
 
