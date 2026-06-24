@@ -5,7 +5,7 @@ import java.util.ListIterator;
 
 public class ListIteratorDemo {
     public static void main(String[] args) {
-        LinkedList ll = new LinkedList();
+        LinkedList<String> ll = new LinkedList<>();
 
         ll.add("Yash");
         ll.add("99");
@@ -16,10 +16,10 @@ public class ListIteratorDemo {
 
         System.out.println(ll);
 
-        ListIterator litr = ll.listIterator();
+        ListIterator<String> litr = ll.listIterator();
 
         while (litr.hasNext()) {
-            String S = (String) litr.next();
+            String S = litr.next();
 
             if (S.equals("Yash")) {
                 litr.remove();

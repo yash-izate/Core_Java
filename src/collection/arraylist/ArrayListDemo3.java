@@ -4,7 +4,7 @@ import java.util.*;
 
 public class ArrayListDemo3 {
     public static void main(String[] args) {
-        ArrayList l = new ArrayList(10);
+        ArrayList<Object> l = new ArrayList<>(10);
 
         l.add(10);
         l.add(1, "Middle");
